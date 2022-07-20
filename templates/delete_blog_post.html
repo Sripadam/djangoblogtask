@@ -1,0 +1,15 @@
+{%extends 'base.html'%} {%block content%}
+
+<form enctype="multipart/form-data" method="POST"> {% csrf_token %}
+    <div class="container mt-4">
+    <div class ="card">
+        <div class="'card-body">
+            <h1> Are you sure you want to delete this blog?</h1> <br/>
+            <a href="/" class="btn btn-success">Cancel</a>
+            <button class="btn btn-primary">Delete Post</button>
+        </div>
+    </div>
+   
+    </div>
+    </form>
+{%endblock content%}
